@@ -17,7 +17,7 @@ public class CitiController {
 	@Autowired
 	private CitiService citiService;
 
-	@GetMapping("/getCitiDetails")
+	@GetMapping("/getCitiList")
 	public ResponseEntity<List<CitiDetailsDTO>> getCitiList() throws Exception {
 		return new ResponseEntity<List<CitiDetailsDTO>>(citiService.getCItiList(), HttpStatus.OK);
 	}
